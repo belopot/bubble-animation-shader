@@ -39,7 +39,7 @@ export default class Scene {
             fov,
             window.innerWidth / window.innerHeight,
             1,
-            1000
+            10000
         )
         this.camera.position.set(0, 0, perspective)
 

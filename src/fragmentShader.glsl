@@ -120,10 +120,10 @@ void main() {
 	vec2 circlePos = st + mouse;
 	float c = circle(circlePos, u_radius, 0.3) * 2.5;
 
-	float offx = v_uv.x + sin(v_uv.y + u_time * .1);
-	float offy = v_uv.y - u_time * 0.1 - cos(u_time * .001) * .01;
+	float offx = v_uv.x + sin(v_uv.y + u_time * .2);
+	float offy = v_uv.y - u_time * 0.1 - cos(u_time * .001) * .02;
 
-	float n = snoise3(vec3(offx, offy, u_time * .1) * 3.) - 1.;
+	float n = snoise3(vec3(offx, offy, u_time * .1) * 12.) - 1.;
 
 	float finalMask = smoothstep(0.5, 0.4, n + c);
 
