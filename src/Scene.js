@@ -23,6 +23,10 @@ export default class Scene {
         this.figure = new Figure(this.scene, () => {
             this.update()
         })
+
+        window.addEventListener('resize', ev => {
+            this.onResize(ev)
+        }, false);
     }
 
     initLights() {
@@ -53,5 +57,12 @@ export default class Scene {
         this.figure.update()
 
         this.renderer.render(this.scene, this.camera)
+    }
+
+    onResize(event) {
+        this.figure.uniforms.u_res.value = new THREE.Vector2(window.innerWidth, window.innerHeight);
+        this.camera.aspect = window.innerWidth / window.innerHeight;
+        this.camera.updateMatrixWorld();
+        this.renderer.setSize(window.innerWidth, window.innerHeight);
     }
 }

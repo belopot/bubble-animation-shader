@@ -20,6 +20,9 @@ export default class Figure {
         this.offset = new THREE.Vector2(0, 0)
 
         this.mouse = new THREE.Vector2(0, 0)
+
+        
+
         // window.addEventListener('mousemove', ev => {
         //     this.onMouseMove(ev)
         // })
@@ -67,10 +70,10 @@ export default class Figure {
         })
 
         this.mesh = new THREE.Mesh(this.geometry, this.material)
-        
+
         // this.mesh.position.set(this.offset.x, this.offset.y, 0)
         this.mesh.scale.set(this.sizes.x, this.sizes.y, 1)
-        
+
         this.scene.add(this.mesh)
     }
 
@@ -85,6 +88,8 @@ export default class Figure {
             y: this.mouse.x * (Math.PI / 6)
         })
     }
+
+    
 
     update() {
         this.uniforms.u_time.value += 0.005
