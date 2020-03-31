@@ -123,9 +123,9 @@ void main() {
 	float offx = v_uv.x + sin(v_uv.y + u_time * .1);
 	float offy = v_uv.y - u_time * 0.1 - cos(u_time * .001) * .01;
 
-	float n = snoise3(vec3(offx, offy, u_time * .1) * 8.) - 1.;
+	float n = snoise3(vec3(offx, offy, u_time * .1) * 5.) - 1.;
 
-	float finalMask = smoothstep(0.5, 0.4, n + pow(c, 1.5));
+	float finalMask = smoothstep(0.5, 0.4, n + c);
 
 	vec4 image = texture2D(u_image, v_uv);
 	vec4 hover = texture2D(u_imagehover, v_uv);
