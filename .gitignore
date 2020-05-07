@@ -18,4 +18,3 @@ bin-release/
 # information for Eclipse / Flash Builder.
 node_modules
 .cache
-dist
