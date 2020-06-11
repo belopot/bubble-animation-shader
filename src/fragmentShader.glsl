@@ -120,8 +120,8 @@ void main() {
 	vec2 circlePos = st + mouse;
 	float c = circle(circlePos, u_radius, 0.3) * 2.5;
 
-	float offx = v_uv.x + sin(v_uv.y + u_time * .1);
-	float offy = v_uv.y - u_time * 0.1 - cos(u_time * .001) * .01;
+	float offx = v_uv.x + sin(v_uv.y + u_time * .3);
+	float offy = v_uv.y - u_time * 0.1 - cos(u_time * .003) * .01;
 
 	float n = snoise3(vec3(offx, offy, u_time * .1) * 5.) - 1.;
 

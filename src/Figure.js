@@ -72,7 +72,7 @@ export default class Figure {
         this.mesh = new THREE.Mesh(this.geometry, this.material)
 
         // this.mesh.position.set(this.offset.x, this.offset.y, 0)
-        this.mesh.scale.set(this.sizes.x, this.sizes.y, 1)
+        this.mesh.scale.set(this.sizes.x * 1.5, this.sizes.y * 1.5, 1)
 
         this.scene.add(this.mesh)
     }
