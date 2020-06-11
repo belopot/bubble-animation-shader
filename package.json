@@ -5,7 +5,6 @@
   "main": "index.html",
   "author": "belopot",
   "private": false,
-  "homepage": "https://belopot.github.io/bubble-animation-shader/",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html",

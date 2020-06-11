@@ -1,6 +1,6 @@
 # bubble-animation-shader
  
-![1](https://github.com/belopot/bubble-animation-shader/blob/master/screenshots/1.JPG)
+![1](https://github.com/belopot/bubble-animation-shader/blob/master/screenshots/0.gif)
 
 <!-- ## View the project
 https://belopot.github.io/bubble-animation-shader/ -->

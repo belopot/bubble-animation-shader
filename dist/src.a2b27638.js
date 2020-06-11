@@ -46394,7 +46394,7 @@ exports.default = Figure;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.tempVal = exports.default = void 0;
+exports.default = void 0;
 
 var THREE = _interopRequireWildcard(require("three"));
 
@@ -46415,8 +46415,6 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 var perspective = 800;
-var tempVal = "aaaaaaaaaaaaaa";
-exports.tempVal = tempVal;
 
 var Scene =
 /*#__PURE__*/
@@ -46485,14 +46483,11 @@ exports.default = Scene;
 
 require("./styles.css");
 
-var _Scene = _interopRequireWildcard(require("./Scene"));
+var _Scene = _interopRequireDefault(require("./Scene"));
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 window.scene = new _Scene.default();
-console.log("aaaaaaaaaaa", _Scene.tempVal);
 },{"./styles.css":"src/styles.css","./Scene":"src/Scene.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -46521,7 +46516,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "14054" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8283" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
