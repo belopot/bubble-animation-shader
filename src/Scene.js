@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import Figure from './Figure'
 
-const perspective = 2000
+const perspective = 500
 
 export default class Scene {
     constructor() {
